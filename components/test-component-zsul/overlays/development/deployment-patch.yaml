@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-zsul
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-saaj-tenant/test-app-iwab/test-component-zsul@sha256:f6ddf88d53204fb122bcbb63240000253faeadef8a7f97435923d4b7d6a4e261
+        name: my-python
+        resources: {}
+status: {}
